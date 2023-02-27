@@ -1,0 +1,79 @@
+.container{
+    display: flex;
+    width:80%;
+    
+    margin: 0 auto;
+    gap: 2rem;
+    
+}
+.TaskBar {
+    box-sizing: border-box;
+    flex-basis: 50%;
+    display: flex;
+    padding: 2rem;
+    background-color: #ddd;
+    flex-direction: column;
+    
+    /* flex-basis: 200px; */
+    
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.TextArea {
+   
+    flex-basis: 50%;
+    flex-grow:1;
+    flex-shrink:1;
+}
+ textarea {
+    font-size:1.2rem;
+     height: 40%;
+    width: 100%;
+}
+button {
+    border: none;
+    background-color: #ddd;
+    font-size: 1.3rem;
+}
+hr {
+   color: black;
+}
+#myDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 300px;
+    overflow-y: auto;
+}
+#myDiv div {
+    font-size: 1.1rem;
+}
+#taskList {
+    margin:  0 auto;
+    margin-bottom: 2rem;
+    
+}
+
+@media screen and (max-width:672px) {
+          .container{
+            flex-direction: column;
+          }
+          .TaskBar{
+            width: 100%;
+           
+          }
+          .TextArea{
+            width:98%;
+          }
+          #taskList{
+           width: 100%;
+          }
+          #myDiv {
+            max-height: 100px;
+            overflow:scroll;
+          }
+}
+#editIcon {
+  width: 15px;
+  height: 15px;
+}
